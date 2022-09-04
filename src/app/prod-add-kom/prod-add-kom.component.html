@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h3>Add Product</h3>
+</div>
+<div class="modal-body">
+    <form action="">
+        <input type="text" name="ProName" class="form-control" placeholder="Product Name" [(ngModel)]="AddPrdVar.TtlVak"><br>
+        <input type="text" name="ProDet"  class="form-control"placeholder="Product Details" [(ngModel)]="AddPrdVar.DtlVak"><br>
+        <input type="text" name="ProPri" class="form-control" placeholder="Product Cost" [(ngModel)]="AddPrdVar.AmtVak"><br>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" 
+        class="btn btn-outline-dark" 
+        (click)="AddFnc()">
+        Add
+    </button>
+</div>
+

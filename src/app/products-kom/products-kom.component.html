@@ -1,0 +1,16 @@
+<h1>{{PrdSvcVar.TtlVar}}</h1><br>
+<button (click)="this.PopMdlVap.open(PopDivNgsUid)" class="btn btn-dark">Add Prod</button>
+<div class="SuperClass">
+    <div *ngFor="let product of PrdSvcVar.PrdAryVar">
+        <a [routerLink]="getPathFromTtlFnc(product.TtlVak)" routerLinkActive="active">
+        <img src="assets/boat.webp" width="200px;">
+        <h3>{{product.TtlVak}}</h3>
+        <p>{{product.DtlVak}}</p>
+        <h5>{{product.AmtVak}}</h5>
+    </a>
+    </div>
+</div>
+
+<ng-template #PopDivNgsUid let-modal>
+    <prod-add-kom [PopNgModal]="modal"></prod-add-kom>
+</ng-template>
